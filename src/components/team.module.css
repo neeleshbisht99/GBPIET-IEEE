@@ -1,0 +1,36 @@
+.container 
+{
+    width:100%;
+    text-align: center;
+}
+.parent
+{
+    margin-top: 10px;
+    width:100%;
+    display: flex;
+    text-align: center;
+    /* flex-direction: column; */
+    justify-content: center;
+}
+.cards
+{
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    max-width: 1900px;
+    text-align: center;
+    justify-content: center;
+}
+.singleCard
+{
+    margin-left: 40px;
+   margin-top: 50px;
+}
+.heading
+{
+    font-family:'Montserrat';
+    color:#717373;
+    font-weight:600 ;
+    font-size:36px;
+    margin-top: 30px;
+}
