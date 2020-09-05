@@ -17,7 +17,7 @@ function TeamEx()
          <div className={singleCard}>
         <ProductCard
           photos={[
-            'http://www.gbpec.ac.in/img/faculty/hsb.jpgg',
+            'http://www.gbpec.ac.in/img/faculty/principal.jpg',
           ]}
         //   price='$99'
          personName='Dr. M.P.S.Chauhan'
@@ -25,18 +25,150 @@ function TeamEx()
          position='Director'
         />
         </div>
-        <div className={singleCard}>
+         <div className={singleCard}>
         <ProductCard
           photos={[
-            'http://www.gbpec.ac.in/img/faculty/hsb.jpgg',
+            '/asset/images/hsb.jpg',
           ]}
         //   price='$99'
-         personName='Dr. M.P.S.Chauhan'
-         designation='Chief Patron'
-         position='Director'
+         personName='Dr. H.S. Bhadauria'
+         designation='Patron'
+         position='Professor & Head CSE'
+        />
+        </div>
+         <div className={singleCard}>
+        <ProductCard
+          photos={[
+            '/asset/images/ysingh.jpg',
+          ]}
+        //   price='$99'
+         personName='Dr. Y. Singh'
+         designation='Patron'
+         position='Professor & Head ECE'
         />
         </div>
 
+         <div className={singleCard}>
+        <ProductCard
+          photos={[
+            '/asset/images/Sanjaygairola.jpg',
+          ]}
+        //   price='$99'
+         personName='Dr. S. Gairola'
+         designation='Patron'
+         position='Professor & Head EE'
+        />
+        </div>
+
+         <div className={singleCard}>
+        <ProductCard
+          photos={[
+            '/asset/images/kamaljeet.jpg',
+          ]}
+        //   price='$99'
+         personName='Dr. Kamaljit Singh Bhatia'
+         designation='Coordinator Professional Societies & Branch Counselor'
+         position='Associate Professor'
+        />
+        </div>
+         <div className={singleCard}>
+        <ProductCard
+          photos={[
+            '/asset/images/bhola_jha.jpg',
+          ]}
+        //   price='$99'
+         personName='Dr. Bhola Jha'
+         designation='Member IEEE & TEQIP Coordinator'
+         position='Associate Professor'
+        />
+        </div>
+         <div className={singleCard}>
+        <ProductCard
+          photos={[
+            '/asset/images/yatendra_ee.jpg',
+          ]}
+        //   price='$99'
+         personName='Dr. Yatindra Kumar'
+         designation='Member IEEE & Branch Advisor'
+         position='Associate Professor'
+        />
+        </div>
+         <div className={singleCard}>
+        <ProductCard
+          photos={[
+            '/asset/images/sandeeprana.jpg',
+          ]}
+         personName='Mr. Sandeep Rana'
+         designation='Member IEEE & Branch Advisor'
+         position='Assistant Professor'
+        />
+        </div>
+
+        <div className={singleCard}>
+        <ProductCard
+          photos={[
+            '/asset/images/MeenakshiKathayat.jpg',
+          ]}
+         personName='Ms. Meenakshi Kathayat'
+         designation='Member IEEE & Branch Advisor'
+         position='Assistant Professor'
+        />
+        </div>
+
+        <div className={singleCard}>
+        <ProductCard
+          photos={[
+            '/asset/images/PRANSHUDANGWAL.jpg',
+          ]}
+         personName='Mr. Pranshu Dangwal'
+         designation='Member IEEE & Branch Advisor'
+         position='Assistant Professor'
+        />
+        </div>
+
+        <div className={singleCard}>
+        <ProductCard
+          photos={[
+            '/asset/images/hsb.jpg',
+          ]}
+         personName='Mr. Chandra Shekhar'
+         designation='Member IEEE & Branch Secretary'
+         position='Student'
+        />
+        </div>
+    
+        <div className={singleCard}>
+        <ProductCard
+          photos={[
+            '/asset/images/hsb.jpg',
+          ]}
+         personName='Ms. Shreya Sati'
+         designation='Member IEEE & Branch Vice-chair'
+         position='Student'
+        />
+        </div>
+    
+        <div className={singleCard}>
+        <ProductCard
+          photos={[
+            '/asset/images/hsb.jpg',
+          ]}
+         personName='Mr. Raman Kukreti'
+         designation='Member IEEE & Treasurer'
+         position='Student'
+        />
+        </div>
+
+        <div className={singleCard}>
+        <ProductCard
+          photos={[
+            '/asset/images/hsb.jpg',
+          ]}
+         personName='Ms. Priyanshi Negi'
+         designation='Member IEEE & Webmaster'
+         position='Student'
+        />
+        </div>
     
         </div>
         </div>
