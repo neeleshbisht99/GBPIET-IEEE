@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import styles from './styles.scss';
-
+// import styles from './styles.scss';
+import './styles.scss';
 const ProductCardDescription = ({
   productName,
-  description,
+  position,
+  designation,
   buttonText,
   rating,
   url
@@ -13,8 +14,14 @@ const ProductCardDescription = ({
   const renderButton = () => {
     if (buttonText) {
       return (
-        <div className={styles['row']}>
-          <a className={styles['buy-button']} href={url}>
+        <div 
+        // className={styles['row']}
+        className={'row'}
+        >
+          <a 
+          // className={styles['buy-button']} 
+          className={'buy-button'}
+          href={url}>
             {buttonText}
           </a>
         </div>
@@ -24,10 +31,19 @@ const ProductCardDescription = ({
     }
   };
   return (
-    <div className={styles['product-card-description-box']}>
-      <div className={styles['product-card-name']}>{productName}</div>
-      <p className={styles['product-card-description']}>{description}</p>
-      {renderButton()}
+    <div 
+     className={'product-card-description-box'}
+    >
+      <div 
+      className={'product-card-name'}
+      >{productName}</div>
+      <p
+      className={'product-card-description'}
+      >{designation}</p>
+      {/* <br/> */}
+      <p
+      className={'product-card-description'}
+      >{position}</p>
     </div>
   );
 };

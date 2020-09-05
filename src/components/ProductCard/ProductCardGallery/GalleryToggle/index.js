@@ -1,7 +1,7 @@
 import React from 'react';
 
-import styles from './styles.scss';
-
+// import styles from './styles.scss';
+import './styles.scss';
 class GalleryToggle extends React.Component {
   constructor(props) {
     super(props);
@@ -28,8 +28,9 @@ class GalleryToggle extends React.Component {
     
     return (
       <div
-	      className={styles['gallery-toggle']}
-	      style={style}
+	      // className={styles['gallery-toggle']}
+        className={'gallery-toggle'}
+        style={style}
 	      onClick={action}
 	    >
 	      {icon}

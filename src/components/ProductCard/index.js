@@ -6,8 +6,8 @@ import Card from '../Card';
 import ProductCardDescription from './ProductCardDescription';
 import ProductCardGallery from './ProductCardGallery';
 import PriceTag from './PriceTag';
-import styles from './styles.scss';
-
+// import styles from './styles.scss';
+import './styles.scss';
 class ProductCard extends React.Component {
   constructor(props) {
     super(props);
@@ -19,8 +19,9 @@ class ProductCard extends React.Component {
       className,
       photos,
       price,
-      productName,
-      description,
+      personName,
+      position,
+      designation,
       buttonText,
       rating,
       url,
@@ -29,17 +30,22 @@ class ProductCard extends React.Component {
 
     return (
       <Card
+        // className={cx(
+        //   styles['product-card'],
+        //   className
+        // )}
         className={cx(
-          styles['product-card'],
-          className
-        )}
+          'product-card',
+            className
+          )}
       {...other}
       >
         <ProductCardGallery photos={photos} />
-        <PriceTag price={price} />
+        {/* <PriceTag price={price} /> */}
         <ProductCardDescription
-          productName={productName}
-          description={description}
+          productName={personName}
+          position={position}
+          designation={designation}
           buttonText={buttonText}
           rating={rating}
           url={url}
@@ -52,8 +58,9 @@ class ProductCard extends React.Component {
 ProductCard.propTypes = {
   photos: PropTypes.arrayOf(PropTypes.string),
   price: PropTypes.number,
-  productName: PropTypes.string,
-  description: PropTypes.string,
+  personName: PropTypes.string,
+  position: PropTypes.string,
+  designation: PropTypes.string,
   buttonText: PropTypes.string,
   url: PropTypes.string
 };

@@ -1,7 +1,7 @@
 import React from 'react';
 
-import styles from './styles.scss';
-
+// import styles from './styles.scss';
+import './styles.scss';
 class PriceTag extends React.Component {
   constructor(props) {
     super(props);
@@ -13,7 +13,10 @@ class PriceTag extends React.Component {
     } = this.props;
 
     return (
-      <div className={styles['price-tag']}>
+      <div
+      //  className={styles['price-tag']}
+       className={'price-tag'}
+      >
 	      {price}
       </div>
     );

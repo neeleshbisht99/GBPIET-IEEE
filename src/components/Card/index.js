@@ -1,14 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import classnames from 'classnames';
+import cx from 'classnames';
 
-import styles from './styles.scss';
-
+// import styles from './styles.scss';
+import './styles.scss';
 class Card extends React.Component {
   constructor(props) {
     super(props);
   }
-  
+ 
+
   render() {
     let {
       className,
@@ -17,12 +18,16 @@ class Card extends React.Component {
     } = this.props;
     return (
       <div
-        className={
-          classnames(
-            styles.card,
-            { [`${styles.float}`]: float },
-            className,
-          )}
+           className={cx('card',
+           className,
+           {'float':float}
+           )}       
+         // className={
+        //   classnames(
+        //     styles.card,
+        //     { [`${styles.float}`]: float },
+        //     className,
+        //   )}
       { ...other }
       >
 	      {this.props.children}

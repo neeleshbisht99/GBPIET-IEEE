@@ -2,8 +2,8 @@ import React from 'react';
 import cx from 'classnames';
 
 import GalleryToggle from './GalleryToggle';
-import styles from './styles.scss';
-
+// import styles from './styles.scss';
+import './styles.scss';
 class ProductCardGallery extends React.Component {
   constructor(props) {
     super(props);
@@ -26,22 +26,25 @@ class ProductCardGallery extends React.Component {
       activeItem: (((this.state.activeItem-1)%n)+n)%n
     });
   }
-
+  
   render() {
     let {
       photos
     } = this.props;
     return (
       <div
-	      className={styles['product-card-gallery']}
+      className={'product-card-gallery'}
+	      // className={styles['product-card-gallery']}
 	 >
 	{
 	  photos.map((photo, i) => {
 	    return (
 	      <div
 		      className={cx(
-            styles['gallery-item'],
-            {[`${styles['active']}`]: this.state.activeItem===i}
+            'gallery-item',
+            {'active': this.state.activeItem===i}
+            // styles['gallery-item'],
+            // {[`${styles['active']}`]: this.state.activeItem===i}
           )}
 		 style={{
 		   backgroundImage: `url(${photo})`
