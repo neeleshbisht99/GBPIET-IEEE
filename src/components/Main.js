@@ -6,15 +6,10 @@ function Main()
 {
     return (
         <>
-          <BrowserRouter>
                 <Switch>
                 <Route path="/" component={ContentEx} exact />
-                 <Route path="/team" component={TeamEx} />
-                {/* <Route path="/shop" component={Shop} /> */}
-                <Route component={Error} />
-            
+                <Route exact path="/team" component={TeamEx} />
             </Switch>
-            </BrowserRouter>
         </>
     );
 }

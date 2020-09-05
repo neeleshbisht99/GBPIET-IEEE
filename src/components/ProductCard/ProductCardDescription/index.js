@@ -37,13 +37,11 @@ const ProductCardDescription = ({
       <div 
       className={'product-card-name'}
       >{productName}</div>
-      <p
-      className={'product-card-description'}
-      >{designation}</p>
-      {/* <br/> */}
-      <p
-      className={'product-card-description'}
-      >{position}</p>
+      <div className="descriptionContent">  
+       {designation}
+       <br/>
+      {position}
+      </div>
     </div>
   );
 };

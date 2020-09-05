@@ -28,9 +28,8 @@
 }
 .heading
 {
-    font-family:'Montserrat';
-    color:#717373;
-    font-weight:600 ;
-    font-size:36px;
+    font-family: CeraproMedium;
+    font-size: 50px;
+    color: #485160;
     margin-top: 30px;
 }

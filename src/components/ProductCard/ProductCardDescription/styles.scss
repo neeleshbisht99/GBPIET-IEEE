@@ -4,7 +4,7 @@
   justify-content: flex-start;
 
   flex: 0 0 auto;
-  height: 50%;
+  height: 30%;
   padding: 1.5rem 2rem;
   box-sizing: border-box;
   background-color: #ecf0f1;
@@ -18,9 +18,12 @@
 
 .product-card-name {
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   letter-spacing: 3px;
   color: #2c3e50;
+  font-family: CeraproMedium;
+  // font-size: '21px',
+  line-height: 1.8em;
 }
 
 .product-card-description {
@@ -45,4 +48,14 @@
   &:active {
     background-color: #16a085;
   }
+}
+
+
+.descriptionContent
+{
+  font-family: CeraproLight;
+  color:#2c3e50;
+  text-align: left;
+  font-size: 18px;
+  padding-top: 10px;
 }

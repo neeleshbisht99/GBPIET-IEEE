@@ -47,7 +47,7 @@ class ProductCardGallery extends React.Component {
             // {[`${styles['active']}`]: this.state.activeItem===i}
           )}
 		 style={{
-		   backgroundImage: `url(${photo})`
+       backgroundImage: `url(${photo})`
 		 }}
 		 />
 	    );

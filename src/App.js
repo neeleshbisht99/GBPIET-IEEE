@@ -6,6 +6,8 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import Typography from "@material-ui/core/Typography";
 import Toolbar from "@material-ui/core/Toolbar";
 import { withStyles } from "@material-ui/core/styles";
+import TeamEx from './components/TeamEx';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import {
   Root,
   getHeader,
@@ -60,9 +62,15 @@ const styles = () => ({
     marginRight: '50px',
     marginTop: '30px',
     borderRadius: '50px',
+    backgroundColor:'#f0f4f6',
   },
   nav:{
-      backgroundColor: '#F2F4FB',
+      backgroundImage:'linear-gradient(to right, #f0f4f6, #fff)' ,
+      fontFamily: 'CeraproMedium',
+      color: '#565c5f',
+      fontSize: '21px',
+      lineHeight: '1.8em',
+      fontWeight: 400,
   }
 });
 
@@ -87,6 +95,7 @@ function App({classes }) {
       <Typography variant={"h2"}>Changing Preset...</Typography>
     </div>
   ) : (
+    <BrowserRouter>
     <StylesProvider injectFirst>
       <CssBaseline />
       <Root scheme={presets[preset]}>
@@ -107,24 +116,14 @@ function App({classes }) {
               <CollapseBtn />
             </DrawerSidebar>
             <Content>
-              {/* <ContentForm
-                preset={preset}
-                onChangePreset={val => {
-                  setLoading(true);
-                  setPreset(val);
-                  setTimeout(() => setLoading(false), 500);
-                }}
-                data={data}
-                onChangeData={setData}
-              /> */}
-              {/* {data.content && <ContentEx />} */}
-              <Main/>
+            <Main/>
             </Content>
             <Footer>{data.footer && <FooterEx />}</Footer>
           </>
         )}
       </Root>
     </StylesProvider>
+      </BrowserRouter>
   );
 }
 

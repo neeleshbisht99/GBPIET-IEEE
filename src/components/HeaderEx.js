@@ -9,11 +9,17 @@ import Typography from "@material-ui/core/Typography";
 
 const styles = ({ spacing, transitions, breakpoints, palette, shape }) => ({
   header: {
-    fontWeight: 900,
+    fontWeight: 700,
     minWidth: 0,
-    fontSize: 18
+    fontSize: 25,
+    color:'#485160',
   },
   ieLink:{
+    fontFamily: 'CeraproMedium',
+    color: '#565c5f',
+    fontSize: '21px',
+    lineHeight: '1.8em',
+    fontWeight: 400,
     paddingRight:'20px',
   },
   grow: {
@@ -66,8 +72,8 @@ const styles = ({ spacing, transitions, breakpoints, palette, shape }) => ({
 
 const HeaderEx = ({ classes, screen }) => (
   <>
-    <Typography noWrap color={"textSecondary"} className={classes.header}>
-      Layout v4.0.0
+    <Typography noWrap color={"#485160"} className={classes.header}>
+      GBPIET | IEEE
     </Typography>
     <div className={classes.grow} />
     <div>
