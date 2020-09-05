@@ -125,7 +125,18 @@ function TeamEx()
          position='Assistant Professor'
         />
         </div>
-
+        
+        <div className={singleCard}>
+        <ProductCard
+          photos={[
+            '/asset/images/ayush.jpg',
+          ]}
+         personName='Mr. Ayush Mishra'
+         designation='Member IEEE &  Branch Chair'
+         position='Student'
+        />
+        </div> 
+        
         <div className={singleCard}>
         <ProductCard
           photos={[
