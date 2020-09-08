@@ -19,7 +19,7 @@ const list = [
   {
     primaryText: "About",
     icon: "hdr_weak",
-    link:'/'
+    link:'/about'
   },
   {
     primaryText: "Our Team",
@@ -79,8 +79,15 @@ function NavContentEx () {
         <Icon>settings</Icon>
       </ListItemIcon>
       <ListItemText
-        primary={"Contact Us"}
-        primaryTypographyProps={{ noWrap: true }}
+ disableTypography
+ primary={<Typography style={{ color: '#FFFFFF', 
+ fontFamily: 'CeraproMedium',
+ color: '#565c5f',
+ fontSize: '21px',
+ lineHeight: '1.8em',
+ fontWeight: 200}}>Contact Us</Typography>} 
+  // primary={primaryText}
+  primaryTypographyProps={{ noWrap: true }}
       />
     </ListItem>
   </List>

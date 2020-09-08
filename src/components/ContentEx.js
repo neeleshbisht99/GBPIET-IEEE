@@ -94,6 +94,8 @@ const styles = ({ breakpoints }) => ({
     lineHeight: '1.8em',
     fontWeight: 400,
     marginBottom:'40px',
+    textAlign: 'justify',
+  textJustify: 'inter-word',
   },
   subhead:{
     color: '#485160',
@@ -123,12 +125,18 @@ const styles = ({ breakpoints }) => ({
     textAlign:'center',
   },
   dashContent:{
-    fontSize:'22px',
-    maxWidth:'1200px',
+    marginTop: '45px',
+    color: 'rgba(208,212,219,.842)',
+    fontFamily: 'CeraproMedium',
+    fontSize: '23px',
+    lineHeight: '1.9em',
+    maxWidth:'1270px',
   },
   dashHeading:{
-    fontSize:'65px',
-    textDecorationLine: 'underline',
+    fontFamily: 'CeraproMedium',
+    fontSize: '80px',
+    color: '#e3e7ee',
+    lineHeight: '.6em',
     
   }
 });
@@ -141,7 +149,7 @@ const ContentEx = ({ classes }) => (
          <div 
          className={classes.carouselMain}
          >
-         <Carousel autoPlay showThumbs={false} showIndicators={false} showStatus={false}>
+         {/* <Carousel autoPlay showThumbs={false} showIndicators={false} showStatus={false}>
                 <div>
                     <img src={dash_1} />
                 </div>
@@ -152,12 +160,28 @@ const ContentEx = ({ classes }) => (
                 <div>
                     <img src={dash_3} />
                 </div>
-        </Carousel>
+        </Carousel> */}
+        <video
+          autoPlay
+          muted
+          loop
+          style={{
+            // position: 'fixed',
+            width: '100%',
+            left: 0,
+            top: 0,
+          }}>
+          <source
+            src="https://www.dropbox.com/s/4la4yvo5qulc2xl/Website%202%20Draft%202.mp4?raw=1"
+            type="video/mp4"
+          />
+        </video>
         <div className={classes.dashHead}>
           <div className={classes.dashHeading}>GBPIET IEEE</div>
            <div className={classes.dashContent}> 
-          The MIT IEEE/ACM Club represents the student branch for two professional international organizations, the Institute of Electrical and Electronics Engineers (IEEE) and the Association for Computing Machinery (ACM).
-Our mission is to create and support a tight-knit community among the students and faculty in the Department of Electrical Engineering and Computer Science (EECS) at MIT.
+          The GBPIET IEEE Club represents the student branch for the Institute of Electrical and Electronics Engineers (IEEE).
+          <br/>
+        Our mission is to create and support a tight-knit community among the students and faculty in the several Departments of Science and Engineering at GBPIET.
 </div>
         </div>
         </div>
@@ -165,7 +189,6 @@ Our mission is to create and support a tight-knit community among the students a
     <div className={classes.parent}>
       <div className={classes.childMain}>
         <div>
-    <Typography variant={"overline"}>INTRODUCING</Typography>
     <Typography weight={"bold"} variant={"h4"} gutterBottom className={classes.headingRoot}>
     Welcome to IEEE Student Branch 
  <Link underline={"none"}>{' '} GBPIET</Link>
@@ -174,19 +197,11 @@ Our mission is to create and support a tight-knit community among the students a
       <b> (updated 1 May 2020)</b>
     </Typography>
     <Typography className={classes.rootContent}>
-    The GBPIET IEEE Club represents the student branch for an international organization, the Institute of Electrical and Electronics Engineers (IEEE) .
-    {/* </Typography >
-    <Typography className={classes.rootContent}> */}
-     Our mission is to create and support a tight-knit community among the students and faculty in the Department of Electrical Engineering and Computer Science at GBPIET.
-    </Typography >
+    IEEE Student Branch of GBPIET seeks to enhance the learning experience of the student community on the GBPIET. The Student Branch focuses on conducting social and technical activities for students, and also encourages the students to take full advantage of the benefits of IEEE membership, including scholarships, competitions, and conference grants.
+    The Student Branch also intends to provide opportunities for students to network with peers in other institutes, academicians, professionals, engineers, and scientists through the on campus IEEE Student Branch and the Local IEEE Section, thereby encouraging students to be a part of the global IEEE community.
     <br/>
-    <Typography indent={"small"}className={classes.rootContent}>
-    IEEE is an opportunity. It is you, who has to decide if you want to be a part of this amazing community.
-    It will help you to interact with other IEEE members of your Student branch (SB) and also with the local section members. The membership will help you boost the technical knowledge in you and also keep oneself updated. 
-    Involving in SB activities not only helps you to acquire technical skills but helps you to get managerial skills as well as help to network with other enthusiastic students, volunteers as well as professional members.
-Its all about your passion towards a scientific and technical arena.
-    </Typography>
-    <br />
+    The IEEE student branch GBPIET is the complete institute level part of the IEEE Uttar Pradesh Section.
+    </Typography >
     <br />
     <br />
     <Typography weight={"bold"} variant={"h5"} gutterBottom className={classes.subhead}>
@@ -194,71 +209,9 @@ Its all about your passion towards a scientific and technical arena.
     </Typography>
     <Typography gutterBottom className={classes.rootContent}>   
     It aims to encourage and support students to put their creativity and intelligence into action. It helps students brings up a lot of amazing ideas. It was also created with the vision to give students the opportunity to meet and learn from fellow students, as well as faculty members and professionals in the field.  As we want to make every student here in GBPIET to contribute her/his own bit to science and tehnology.  </Typography>
-    <br/>
-    <br/>
-     <Typography weight={"bold"} variant={"h5"} gutterBottom className={classes.subhead}>
-      {"Let's start with, What  is IEEE ?"}
-    </Typography>
-    <Typography gutterBottom className={classes.rootContent}>   
-    The Institute of Electrical and Electronics Engineers, Incorporated (IEEE) is a non-profit corporation, incorporated in the state of New York on 16 March 1896.
-The purpose of the IEEE is to engage exclusively in scientific and educational activities within the meaning of Section 501(c)(3) of the Internal Revenue Code of 1986, as amended, directed toward the advancement of the theory and practice of electrical, electronics, communications and computer engineering, as well as computer science, the allied branches of engineering and the related arts and sciences, which benefit the engineering profession and the public.  <br />
-    </Typography>
-    <br/>
-    <br/>
-    <Typography weight={"bold"} variant={"h5"} gutterBottom className={classes.subhead}>
-      {"What are the perks of being a student member of IEEE?"}
-    </Typography>
-    <Typography gutterBottom className={classes.rootContent}>   
-   <li>You stay updated with the latest technology and gadgets.</li>
-   <li>As a student you will be exposed to various technical conferences.</li>
-   <li>You might be fortunate enough to meet some great names of scientific and technical field. Their world will for sure inspire you .</li>
-   <li>Some of the unique skills such as Leadership,team management could be cultivated in yourself.</li>
-   <li>IEEE student section will have Hub meetings. “Networking” or in short you wil have some new friends from different colleges to help you. You could share your ideas. its fun too.</li>
-    <br />
-    </Typography>
-    <br/>
-    <br/>
-    <Typography weight={"bold"} variant={"h5"} gutterBottom className={classes.subhead}>
-      {"Networking Opportunities and Exposure"}
-    </Typography>
-    <Typography gutterBottom className={classes.rootContent}>   
-    You will get a chance to interact and network with other IEEE Members at your college. When you go to attend IEEE Events outside, your professional network grows manifold. you get to meet and interact with IEEE members from various places, resource persons from industry and academia as well.
-    </Typography>
-    <br/>
-    <br/>
-    <Typography weight={"bold"} variant={"h5"} gutterBottom className={classes.subhead}>
-      {"Stay Technically Current:"}
-    </Typography>
-    <Typography gutterBottom className={classes.rootContent}>   
-    With Technical Magazines like IEEE Spectrum, IEEE Potentials and IEEE The Institute Newsletter, You will be able to stay updated with the latest advancements in your field of interest and all fields in general. You will get regular updates about the various international and national IEEE Conferences happening at various places. The IEEE Xplore Digital Library, comes at a discounted price for IEEE Student Members. </Typography>
-    <br/>
-    <br/>
-    <Typography weight={"bold"} variant={"h5"} gutterBottom className={classes.subhead}>
-      {"Volunteering at Student Branch/Section/Council/Region"}
-    </Typography>
-    <Typography gutterBottom className={classes.rootContent}>   
-    By Volunteering at the SB Level to organise events, helps you learn teamwork, and enhances your management, leadership skills. The dedication to volunteering at SB Level will open up opportunities at the Section/Region/Council Level as well, thereby enhancing your skill-set and your professional network.
 <br/>
-“Volunteers are not paid, not because they are worthless, but because they are priceless!!!”
- </Typography>
- <br/>
-    <br/>
-    <Typography weight={"bold"} variant={"h5"} gutterBottom className={classes.subhead}>
-      {"Online Benefits"}
-    </Typography>
-    <Typography gutterBottom className={classes.rootContent}>   
-    IEEE Collabratec is a social network for IEEE Members only. This can be used to collaborate with your contacts/network, share important information etc. IEEE ResumeLab lets you create and customise your resume from various styles/templates. myIEEE is a personalised portal to access your member benefits. There are so many IEEE Member Benefits available online. http://IEEE.tv provides lot of technical content such as online courses, videos on technology, streaming of conferences etc. IEEE Student Members can access http://IEEE.tv for free.
- </Typography>
- <br/>
-    <br/>
-    <Typography weight={"bold"} variant={"h5"} gutterBottom className={classes.subhead}>
-      {"Technical Societies"}
-    </Typography>
-    <Typography gutterBottom className={classes.rootContent}>   
-    Technical Societies further concentrate on particular fields of engineering/technology. These societies conduct their own International Conferences, have their own magazines/newsletters, offer online courses etc. IEEE Computer Society (CS) has its own digital library.
- </Typography>
- <br/>
- <br/>
+<br/>
+<br/>
  <Typography weight={"bold"} variant={"h4"} gutterBottom className={classes.headingRoot}>
  UP SECTION
     </Typography>
@@ -291,23 +244,27 @@ Prior to that, Uttar Pradesh had been a sub-section under the Delhi Section sinc
     <Card className={classes.cardSide}>
     <div className={classes.subhead}>Upcoming Events</div>
     <div className={classes.subheadNotice}>
-    2020 International Conference on Bioinformatics and Systems Biology (BSB)  </div>
+    2020 International Conference on Bioinformatics and Systems Biology (BSB) (*UP Section) </div>
     <Divider light />
     <div className={classes.subheadNotice}>
     2020 International Conference on Frontiers in Information and Computer Security (FICS)
+    (*UP Section)
  </div>
     <Divider light />
 
     <div className={classes.subheadNotice}>
-    2020 9th International Conference System Modeling and Advancement in Research Trends (SMART) </div>
+    2020 9th International Conference System Modeling and Advancement in Research Trends (SMART) 
+    (*UP Section)</div>
     <Divider light />
     <div className={classes.subheadNotice}>
     2020 2nd International Conference on Advances in Computing, Communication Control and Networking (ICACCCN)
+    (*UP Section)
 </div>
     <Divider light />
     <Divider light />
     <div className={classes.subheadNotice}>
-    2021 International Conference on Advance Computing and Innovative Technologies in Engineering (ICACITE)  </div>
+    2021 International Conference on Advance Computing and Innovative Technologies in Engineering (ICACITE)  
+    (*UP Section)</div>
     </Card>
     {/* <Card className={classes.cardSide}>
     <div className={classes.subhead}>JOIN US</div>

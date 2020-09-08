@@ -4,18 +4,17 @@ import classes from './team.module.css';
 import Img from '../assets/images/hsb.png';
 function TeamEx()
 {
-    const { container,cards,parent,singleCard, heading }=classes;
+    const { container,cards,parent,singleCard, heading, headingStudent }=classes;
     return (
         <div className={container}>
       <div className={heading}>
-        OUR TEAM
+        OUR EXECUTIVE COMMITTEE
       </div>
       <div className={parent}> 
       <div 
       className={cards}
       >
-
-<div className={singleCard}>
+       <div className={singleCard}>
         <ProductCard
           photos={[
             'https://www.dropbox.com/s/a5t9lx20yuhhf53/principal.jpg?raw=1',
@@ -34,7 +33,7 @@ function TeamEx()
         //   price='$99'
          personName='Dr. H.S. Bhadauria'
          designation='Patron'
-         position='Professor & Head CSE'
+         position='Professor & Head CSED'
         />
         </div>
          <div className={singleCard}>
@@ -45,7 +44,7 @@ function TeamEx()
         //   price='$99'
          personName='Dr. Y. Singh'
          designation='Patron'
-         position='Professor & Head ECE'
+         position='Professor & Head ECED'
         />
         </div>
 
@@ -57,7 +56,7 @@ function TeamEx()
         //   price='$99'
          personName='Dr. S. Gairola'
          designation='Patron'
-         position='Professor & Head EE'
+         position='Professor & Head EED'
         />
         </div>
 
@@ -69,7 +68,7 @@ function TeamEx()
         //   price='$99'
          personName='Dr. Kamaljit Bhatia'
          designation='Coordinator Professional Societies & Branch Counselor'
-         position='Associate Professor'
+         position='Associate Professor ECED'
         />
         </div>
          <div className={singleCard}>
@@ -80,7 +79,7 @@ function TeamEx()
         //   price='$99'
          personName='Dr. Bhola Jha'
          designation='Member IEEE & TEQIP Coordinator'
-         position='Associate Professor'
+         position='Associate Professor EED'
         />
         </div>
          <div className={singleCard}>
@@ -91,7 +90,7 @@ function TeamEx()
         //   price='$99'
          personName='Dr. Yatindra Kumar'
          designation='Member IEEE & Branch Advisor'
-         position='Associate Professor'
+         position='Associate Professor EED'
         />
         </div>
          <div className={singleCard}>
@@ -101,7 +100,7 @@ function TeamEx()
           ]}
          personName='Mr. Sandeep Rana'
          designation='Member IEEE & Branch Advisor'
-         position='Assistant Professor'
+         position='Assistant Professor ECED'
         />
         </div>
 
@@ -112,7 +111,7 @@ function TeamEx()
           ]}
          personName='Ms. Meenakshi Kathayat'
          designation='Member IEEE & Branch Advisor'
-         position='Assistant Professor'
+         position='Assistant Professor CSED'
         />
         </div>
 
@@ -123,10 +122,15 @@ function TeamEx()
           ]}
          personName='Mr. Pranshu Dangwal'
          designation='Member IEEE & Branch Advisor'
-         position='Assistant Professor'
+         position='Assistant Professor BTD'
         />
         </div>
-        
+        </div>
+        </div>
+        <div className={headingStudent}>
+        OUR STUDENT REPRESENTATIVES
+      </div>
+        <div className={cards}>
         <div className={singleCard}>
         <ProductCard
           photos={[
@@ -181,10 +185,8 @@ function TeamEx()
          position='Student'
         />
         </div>
-    
-    
         </div>
-        </div>
+        
         </div>
     );
 }
